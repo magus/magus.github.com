@@ -100,11 +100,11 @@ h3{
 }
 #header #me{
   text-transform: uppercase;
-  margin: 10px 0 20px 0;
+  margin: 10px 0 15px 0;
 }
 #header #noah{
   padding-left: 1px;
-  font-size: 23px;
+  font-size: 22px;
   letter-spacing: 5px;
   color: #666;
 }
@@ -112,7 +112,7 @@ h3{
   color: #000;
 }
 #header #jorgenson{
-  font-size: 17px;
+  font-size: 12px;
   font-weight: bold;
   letter-spacing: 1px;
   color: #000;
