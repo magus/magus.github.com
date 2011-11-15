@@ -421,8 +421,11 @@ body{
 }
 
 .ingredient-box .not-found{
-	color: #FFFF00;
-	position: absolute;
+	color: #FF0000;
+    font-weight: bold;
+    left: 97px;
+    position: absolute;
+    top: 229px;
 }
 
 #recipe-results-nav{
