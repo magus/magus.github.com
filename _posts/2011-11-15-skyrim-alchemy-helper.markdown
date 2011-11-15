@@ -43,6 +43,9 @@ variety of snake.
 
 Enter the Skyrim Alchemy Recipe Helper.
 
+<img src="/images/posts/2011-11-15-skyrim-alchemy-helper/skyrim-alchemy-helper.png" alt="Skyrim Alchemy Recipe Helper Screenshot" class="noclip" />
+
+
 I spent the better part of tonight working on getting this prototype working.
 [Go check it out][skyrim-alchemy-helper-web] on the Heroku dyno it's currently
 running on. It isn't anything fancy but I have plans for improvement already.
