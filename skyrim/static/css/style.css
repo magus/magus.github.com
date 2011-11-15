@@ -420,6 +420,11 @@ body{
     padding-left: 20px;
 }
 
+.ingredient-box .not-found{
+	color: #FFFF00;
+	position: absolute;
+}
+
 #recipe-results-nav{
 	height: 50px;
     margin-left: 200px;
