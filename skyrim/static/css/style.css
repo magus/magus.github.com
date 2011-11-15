@@ -1,0 +1,1316 @@
+/*
+ * HTML5 ✰ Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Detailed information about this CSS: h5bp.com/css
+ *
+ * ==|== normalize ==========================================================
+ */
+
+
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Force vertical scrollbar in non-IE
+ * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body { margin: 0; font-size: 1em; line-height: 1.4; }
+
+body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ */
+
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a { color: #00e; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover, a:active { outline: 0; }
+
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+abbr[title] { border-bottom: 1px dotted; }
+
+b, strong { font-weight: bold; }
+
+blockquote { margin: 1em 40px; }
+
+dfn { font-style: italic; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+/* Redeclare monospace font family: h5bp.com/j */
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+
+/* Improve readability of pre-formatted text in all browsers */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+
+small { font-size: 85%; }
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/e
+ */
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+/*
+ * Correct overflow not hidden in IE9
+ */
+
+svg:not(:root) { overflow: hidden; }
+
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+
+figure { margin: 0; }
+
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+
+/* Indicate that 'label' will shift focus to the associated form element */
+label { cursor: pointer; }
+
+/*
+ * 1. Correct color not inheriting in IE6/7/8/9
+ * 2. Correct alignment displayed oddly in IE6/7
+ */
+
+legend { border: 0; *margin-left: -7px; padding: 0; }
+
+/*
+ * 1. Correct font-size not inheriting in all browsers
+ * 2. Remove margins in FF3/4 S5 Chrome
+ * 3. Define consistent vertical alignment display in all browsers
+ */
+
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+
+/*
+ * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+ */
+
+button, input { line-height: normal; }
+
+/*
+ * 1. Display hand cursor for clickable form elements
+ * 2. Allow styling of clickable form elements in iOS
+ * 3. Correct inner spacing displayed oddly in IE7 (doesn't effect IE6)
+ */
+
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+
+/*
+ * Consistent box sizing and appearance
+ */
+
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+/*
+ * Remove inner padding and border in FF3/4: h5bp.com/l
+ */
+
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+/*
+ * 1. Remove default vertical scrollbar in IE6/7/8/9
+ * 2. Allow only vertical resizing
+ */
+
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+
+/* Colors for form validity */
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+
+/* ==|== primary styles =====================================================
+   Author: Noah M. Jorgenson
+   ========================================================================== */
+
+a, a:visited{
+	color: #72767E;
+    font-weight: bold;
+    text-decoration: none;
+	cursor: pointer;
+}
+
+a:hover{
+	color: #ACB5C5;
+}
+
+body{
+	background: url("../img/layout/back.png") repeat fixed 0 0;
+    color: #696661;
+    font-family: 'PT Sans',sans-serif;
+    font-size: 10px;
+    overflow-x: hidden;
+}
+
+#alchemyapp{
+	position: absolute;
+	line-height: 1.2;
+	height: 528px;
+    left: 50%;
+    margin-left: -256px;
+    margin-top: -230px;
+    opacity: 1;
+    top: 50%;
+    width: 508px;
+	
+	font-size: 13px;
+	line-height: 1.2;
+	
+	z-index: 5;
+}
+
+#alchemyapp .background-lighting{
+	background-position: 0 0;
+    background-repeat: no-repeat;
+	background-image: url("../img/layout/stylesheet-no-repeat.png");
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+#alchemyapp .logo{
+	background-position: 0 -623px;
+    background-repeat: no-repeat;
+	background-image: url("../img/layout/stylesheet-no-repeat.png");
+	
+    height: 141px;
+    left: 146.5px;
+    position: absolute;
+    top: 71px;
+    width: 215px;
+    z-index: 10;
+}
+
+#alchemyapp .title{
+	font-family: 'Yanone Kaffeesatz',sans-serif;
+    font-size: 31px;
+    left: 148.5px;
+    position: absolute;
+    top: 225px;
+    z-index: 11;
+}
+
+
+#alchemyapp .ingredient-wrapper{
+	height: 340px;
+    left: 94px;
+    top: 44px;
+    width: 326px;
+    z-index: 5;
+	
+	position: absolute;
+	
+	border-radius: 15px;
+	background: url("../img/layout/paper.jpg") repeat fixed 0 0 #EBE9E7;
+}
+
+.ingredient-box{
+	height: 340px;
+    left: 0;
+    opacity: 1;
+    top: 0;
+    width: 326px;
+	
+	position: absolute;
+	
+}
+
+
+.ingredient-input{
+	height: 39px;
+    left: 22px;
+    right: 14px;
+    top: 246px;
+    z-index: 30;
+	
+	border: 0 none;
+    color: #474747;
+    outline: medium none;
+    vertical-align: top;
+	
+	overflow: visible;
+	position: absolute;
+}
+
+.ingredient-input .padding{
+	bottom: 1px;
+    left: 3px;
+    right: 3px;
+    top: 1px;
+	position: absolute;
+}
+
+.ingredient-input .padding input{
+	color: #474747;
+	font-size: 17px;
+	
+	border: 1px solid #cecece;
+    display: block;
+    outline: medium none;
+    position: absolute;
+    vertical-align: middle;
+	padding: 0 50px 0 15px;
+	margin: 0 0 0 -10px;
+	
+	height: 100%;
+    width: 230px;
+	
+	border-radius: 6px;
+	
+	-moz-transition: all 0.5s ease-out;  
+    -o-transition: all 0.5s ease-out;  
+    -webkit-transition: all 0.5s ease-out;  
+    transition: all 0.5s ease-out;  
+}
+
+.ingredient-input .padding input:hover, .ingredient-input .padding input:focus, .ingredient-input .padding input:active{
+	border: 1px solid rgba(86, 166, 222, 0.75);
+}
+
+.ingredient-box .search-button{
+	height: 26px;
+    left: 277px;
+    top: 254px;
+    width: 25px;
+    z-index: 31;
+	position: absolute;
+	
+	background-position: 0 -1112px;
+    background-repeat: no-repeat;
+	background-image: url("../img/layout/stylesheet-no-repeat.png");
+}
+
+.ingredient-box .search-button:active{
+	background-position: 0 -1164px;
+    background-repeat: no-repeat;
+}
+
+.ingredient-box .search-button .img{
+	bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.ingredient-box .display-all{
+	height: 24px;
+    left: 50%;
+    margin-left: -72px;
+    top: 306px;
+    width: 143px;
+    z-index: 300;
+	position: absolute;
+	
+	margin-right: 4px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.ingredient-box .display-all .styled-checkbox-button{
+	height: 15px;
+    top: 2px;
+	position: absolute;
+    width: 16px;
+	
+	background-position: 0 -1655px;
+    background-repeat: no-repeat;
+	background-image: url("../img/layout/stylesheet-no-repeat.png");
+}
+
+.ingredient-box .display-all.selected .styled-checkbox-button{
+	background-position: 0 -1640px;
+    background-repeat: no-repeat;
+}
+
+.ingredient-box .display-all .label{
+	color: #232323;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	
+	display: inline-block;
+    line-height: 17px;
+    padding-left: 20px;
+}
+
+#recipe-results-nav{
+	height: 50px;
+    margin-left: 200px;
+    position: fixed;
+    right: -250px;
+    width: 50%;
+    z-index: 15;
+}
+
+#recipe-results{
+	font-size: 13px;
+    height: 100%;
+    margin: 50px 0 0 200px;
+    overflow: auto;
+    position: absolute;
+    right: -250px;
+    width: 50%;
+}
+
+.recipe{
+	margin: 25px 5px;
+}
+
+.recipe .ingredient-list{
+	color: #56A6DE;
+	font-size: 15px;
+    font-weight: bold;
+}
+
+.recipe .ingredient-list .ingredient{
+	display: inline-block;
+    margin: 0 5px;
+}
+
+.recipe .effects{
+	font-style: italic;
+}
+
+.recipe .effects .effect{
+	display: inline-block;
+    margin: 0 5px;
+}
+
+.recipe .separator{
+	background-position: 0 -1794px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 15px;
+    position: relative;
+    top: 3px;
+    width: 1px;
+	
+	background-image: url("../img/layout/stylesheet-no-repeat.png");
+}
+
+
+
+#footer{
+	border-top: 1px dotted #C9C9C9;
+	bottom: 0px;
+    left: 50%;
+    margin: 15px 5px 15px -122px;
+    position: absolute;
+    width: 250px;
+}
+
+#footerNav {
+    width: 600px;
+}
+
+#footerNav li {
+    float: left;
+    list-style: none outside none;
+    margin-bottom: 6px;
+}
+
+#footerNav li a{
+    display: block;
+    padding-right: 39px;
+}
+
+#social {
+    position: fixed;
+	left: 0;
+	bottom: 0;
+}
+
+#social li {
+    float: left;
+    list-style: none outside none;
+    margin-bottom: 6px;
+}
+
+.none{
+	display: none;
+}
+
+
+
+
+
+/* ==|== Google Buttons ======================================================
+   Styles inspired by the google buttons
+   ========================================================================== */
+/*------------------------------------*\
+	CONTENTS
+\*------------------------------------*/
+/*
+WRAPPER
+BUTTON
+BUTTON LABEL
+BUTTON ICON
+ICONS
+DROPDOWN MENU
+*/
+
+
+/*------------------------------------*\
+	$WRAPPER
+\*------------------------------------*/
+.buttons {/* Style as you wish (toolbar) */}
+
+/* The Magnificent CLEARFIX */
+.buttons:before, .buttons:after {
+  content: "\0020"; display: block; height: 0; visibility: hidden;	
+} 
+.buttons:after { clear: both; }
+.buttons { zoom: 1; }
+/* ------------------------ */
+
+
+/*------------------------------------*\
+	$BUTTON
+\*------------------------------------*/
+button, 
+.button {
+	text-decoration: none;
+	text-shadow: 0 1px 0 #fff;
+	
+	font: bold 11px Helvetica, Arial, sans-serif;
+	color: #444;
+	line-height: 17px;
+	height: 18px;
+	
+	display: inline-block;
+	float: left;
+	
+	margin: 5px;
+	padding: 5px 6px 4px 6px;
+	
+	background: #F3F3F3;
+	border: solid 1px #D9D9D9;
+	
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	
+	-webkit-transition: border-color .20s;
+	-moz-transition: border-color .20s;
+	-o-transition: border-color .20s;
+	transition: border-color .20s;
+}
+button {
+	height: 29px !important;
+	cursor: pointer;
+}
+
+button.left, 
+.button.left {
+	margin: 5px 0 5px 5px;
+	
+	border-top-right-radius: 0;
+	-webkit-border-top-right-radius: 0;
+	-moz-border-radius-topright: 0;
+	
+	border-bottom-right-radius: 0;
+	-webkit-border-bottom-right-radius: 0;
+	-moz-border-radius-bottomright: 0;
+}
+button.middle, 
+.button.middle {
+	margin: 5px 0;
+	
+	border-left-color: #F4F4F4;
+	
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+button.right, 
+.button.right {
+	margin: 5px 5px 5px 0;
+	
+	border-left-color: #F4F4F4;
+	
+	border-top-left-radius: 0;
+	-webkit-border-top-left-radius: 0;
+	-moz-border-radius-topleft: 0;
+	
+	border-bottom-left-radius: 0;
+	-webkit-border-bottom-left-radius: 0;
+	-moz-border-radius-bottomleft: 0;
+}
+
+button:hover, 
+.button:hover {
+    background: #F4F4F4;
+		border-color: #C0C0C0;
+		color: #333;
+}
+
+button:active, 
+.button:active {
+	border-color: #4D90FE;
+	color: #4D90FE;
+	
+	-moz-box-shadow:inset 0 0 10px #D4D4D4;
+	-webkit-box-shadow:inset 0 0 10px #D4D4D4;
+	box-shadow:inset 0 0 10px #D4D4D4;
+}
+
+button.on, 
+.button.on {
+	border-color: #BBB;
+	
+	-moz-box-shadow:inset 0 0 10px #D4D4D4;
+	-webkit-box-shadow:inset 0 0 10px #D4D4D4;
+	box-shadow:inset 0 0 10px #D4D4D4;
+}
+button.on:hover, 
+.button.on:hover {
+	border-color: #BBB;
+	
+	-moz-box-shadow:inset 0 0 10px #D4D4D4;
+	-webkit-box-shadow:inset 0 0 10px #D4D4D4;
+	box-shadow:inset 0 0 10px #D4D4D4;
+}
+button.on:active, 
+.button.on:active {
+	border-color: #4D90FE;
+}
+
+button.action, 
+.button.action {
+	border: 1px solid #D8D8D8 !important;
+	
+	background: #F2F2F2;
+	background: -webkit-linear-gradient(top, #F5F5F5, #F1F1F1);
+	background: -moz-linear-gradient(top, #F5F5F5, #F1F1F1);
+	background: -ms-linear-gradient(top, #F5F5F5, #F1F1F1);
+	background: -o-linear-gradient(top, #F5F5F5, #F1F1F1);
+	
+	-webkit-transition: border .20s;
+	-moz-transition: border .20s;
+	-o-transition: border .20s;
+	transition: border .20s;
+}
+button.action:hover, 
+.button.action:hover {
+	border: 1px solid #C6C6C6 !important;
+	
+	background: #F3F3F3;
+	background: -webkit-linear-gradient(top, #F8F8F8, #F1F1F1);
+	background: -moz-linear-gradient(top, #F8F8F8, #F1F1F1);
+	background: -ms-linear-gradient(top, #F8F8F8, #F1F1F1);
+	background: -o-linear-gradient(top, #F8F8F8, #F1F1F1);
+}
+button.blue, 
+.button.blue {
+	border: 1px solid #3079ED !important;
+	
+	background: #4B8DF8;
+	background: -webkit-linear-gradient(top, #4C8FFD, #4787ED);
+	background: -moz-linear-gradient(top, #4C8FFD, #4787ED);
+	background: -ms-linear-gradient(top, #4C8FFD, #4787ED);
+	background: -o-linear-gradient(top, #4C8FFD, #4787ED);
+	
+	-webkit-transition: border .20s;
+	-moz-transition: border .20s;
+	-o-transition: border .20s;
+	transition: border .20s;
+}
+button.blue:hover, 
+.button.blue:hover {
+	border: 1px solid #2F5BB7 !important;
+	
+	background: #3F83F1;
+	background: -webkit-linear-gradient(top, #4D90FE, #357AE8);
+	background: -moz-linear-gradient(top, #4D90FE, #357AE8);
+	background: -ms-linear-gradient(top, #4D90FE, #357AE8);
+	background: -o-linear-gradient(top, #4D90FE, #357AE8);
+}
+button.green, 
+.button.green {
+	border: 1px solid #29691D !important;
+	
+	background: #3A8E00;
+	background: -webkit-linear-gradient(top, #3C9300, #398A00);
+	background: -moz-linear-gradient(top, #3C9300, #398A00);
+	background: -ms-linear-gradient(top, #3C9300, #398A00);
+	background: -o-linear-gradient(top, #3C9300, #398A00);
+	
+	-webkit-transition: border .20s;
+	-moz-transition: border .20s;
+	-o-transition: border .20s;
+	transition: border .20s;
+}
+button.green:hover, 
+.button.green:hover {
+	border: 1px solid #2D6200 !important;
+	
+	background: #3F83F1;
+	background: -webkit-linear-gradient(top, #3C9300, #368200);
+	background: -moz-linear-gradient(top, #3C9300, #368200);
+	background: -ms-linear-gradient(top, #3C9300, #368200);
+	background: -o-linear-gradient(top, #3C9300, #368200);
+}
+button.red, 
+.button.red {
+	border: 1px solid #D14836 !important;
+	
+	background: #D64937;
+	background: -webkit-linear-gradient(top, #DC4A38, #D14836);
+	background: -moz-linear-gradient(top, #DC4A38, #D14836);
+	background: -ms-linear-gradient(top, #DC4A38, #D14836);
+	background: -o-linear-gradient(top, #DC4A38, #D14836);
+	
+	-webkit-transition: border .20s;
+	-moz-transition: border .20s;
+	-o-transition: border .20s;
+	transition: border .20s;
+}
+button.red:hover, 
+.button.red:hover {
+	border: 1px solid #B0281A !important;
+	
+	background: #D14130;
+	background: -webkit-linear-gradient(top, #DC4A38, #C53727);
+	background: -moz-linear-gradient(top, #DC4A38, #C53727);
+	background: -ms-linear-gradient(top, #DC4A38, #C53727);
+	background: -o-linear-gradient(top, #DC4A38, #C53727);
+}
+
+button.action:hover, 
+.button.action:hover {
+	-moz-box-shadow: 0 1px 0px #DDD;
+	-webkit-box-shadow: 0 1px 0px #DDD;
+	box-shadow:iset 0 1px 0px #DDD;
+}
+button.action:active, 
+.button.action:active {
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	border-color: #C6C6C6 !important;
+}
+button.blue:active, 
+.button.blue:active {
+	border-color: #2F5BB7 !important;
+}
+button.green:active, 
+.button.green:active {
+	border-color: #2D6200 !important;
+}
+button.red:active, 
+.button.red:active {
+	border-color: #B0281A !important;
+}
+
+
+
+/*------------------------------------*\
+	$BUTTON LABEL
+\*------------------------------------*/
+.ddm span.label, 
+button span.label, 
+.button span.label {
+	display: inline-block;
+	float: left;
+	line-height: 17px;
+	height: 18px;
+	padding: 0 1px;
+	overflow: hidden;
+	color: #444;
+	
+	-webkit-transition: color .20s;
+	-moz-transition: color .20s;
+	-o-transition: color .20s;
+	transition: color .20s;
+} 
+button span.label {
+	line-height: 15px !important;
+}
+.ddm:active span.label, 
+button:active span.label, 
+.button:active span.label {
+    color: #4D90FE;
+}
+
+button:hover .label, 
+.button:hover .label {
+    color: #333;
+}
+button:hover .label.red, 
+.button:hover .label.red {
+    color: #DB4A37;
+}
+button:hover .label.blue, 
+.button:hover .label.blue {
+    color: #7090C8;
+}
+button:hover .label.green, 
+.button:hover .label.green {
+    color: #42B449;
+}
+button:hover .label.yellow, 
+.button:hover .label.yellow {
+    color: #F7CB38;
+}
+
+button.blue .label, 
+.button.blue .label {
+	color: #FFF !important;
+	text-shadow: 0 1px 0 #2F5BB7 !important;
+}
+button.green .label, 
+.button.green .label {
+	color: #FFF !important;
+	text-shadow: 0 1px 0 #2D6200 !important;
+}
+button.red .label, 
+.button.red .label {
+	color: #FFF !important;
+	text-shadow: 0 1px 0 #B0281A !important;
+}
+button.action .label, 
+.button.action .label {
+	padding: 0 17px !important;
+}
+
+button.action:active .label, 
+.button.action:active .label {
+	color: #333 !important;
+}
+
+button.blue:active .label, 
+button.green:active .label, 
+button.red:active .label, 
+.button.blue:active .label, 
+.button.green:active .label, 
+.button.red:active .label {
+	color: #FFF !important;
+}
+
+
+
+/*------------------------------------*\
+	$BUTTON ICON
+\*------------------------------------*/
+.ddm span.icon, 
+button span.icon, 
+.button span.icon {
+	background-image: url(../images/google+-ui-sprite-gray.png);
+	
+	display: inline-block;
+	margin: 0 7px;
+	float: left;
+	
+	line-height: 18px;
+	height: 18px;
+	width: 18px;
+	max-width: 18px;
+	
+	overflow: hidden;
+	text-indent: -9999px;
+	
+	background-repeat: no-repeat;
+	
+	-webkit-transition: background-image 0.20s linear;
+	-moz-transition: background-image 0.20s linear;
+	-o-transition: background-image 0.20s linear;
+	transition: background-image 0.20s linear;
+}
+.ddm:hover span.icon, 
+button:hover span.icon, 
+.button:hover span.icon {
+	background-image: url(../images/google+-ui-sprite-colour.png);
+}
+
+
+
+/*------------------------------------*\
+	$ICONS
+\*------------------------------------*/
+
+/* Sprite Row 1 */
+span.icon1 {background-position: -0px -0px;}
+span.icon2 {background-position: -18px -0px;}
+span.icon3 {background-position: -36px -0px;}
+span.icon4 {background-position: -54px -0px;}
+span.icon5 {background-position: -72px -0px;}
+span.icon6 {background-position: -90px -0px;}
+span.icon7 {background-position: -108px -0px;}
+span.icon8 {background-position: -126px -0px;}
+span.icon9 {background-position: -144px -0px;}
+span.icon10 {background-position: -162px -0px;}
+span.icon11 {background-position: -180px -0px;}
+span.icon12 {background-position: -198px -0px;}
+span.icon13 {background-position: -216px -0px;}
+span.icon14 {background-position: -234px -0px;}
+span.icon15 {background-position: -252px -0px;}
+span.icon16 {background-position: -270px -0px;}
+span.icon17 {background-position: -288px -0px;}
+span.icon18 {background-position: -306px -0px;}
+span.icon19 {background-position: -324px -0px;}
+span.icon20 {background-position: -342px -0px;}
+
+/* Sprite Row 2 */
+span.icon21 {background-position: -0px -18px;}
+span.icon22 {background-position: -18px -18px;}
+span.icon23 {background-position: -36px -18px;}
+span.icon24 {background-position: -54px -18px;}
+span.icon25 {background-position: -72px -18px;}
+span.icon26 {background-position: -90px -18px;}
+span.icon27 {background-position: -108px -18px;}
+span.icon28 {background-position: -126px -18px;}
+span.icon29 {background-position: -144px -18px;}
+span.icon30 {background-position: -162px -18px;}
+span.icon31 {background-position: -180px -18px;}
+span.icon32 {background-position: -198px -18px;}
+span.icon33 {background-position: -216px -18px;}
+span.icon34 {background-position: -234px -18px;}
+span.icon35 {background-position: -252px -18px;}
+span.icon36 {background-position: -270px -18px;}
+span.icon37 {background-position: -288px -18px;}
+span.icon38 {background-position: -306px -18px;}
+span.icon39 {background-position: -324px -18px;}
+span.icon40 {background-position: -342px -18px;}
+
+/* Sprite Row 3 */
+span.icon41 {background-position: -0px -36px;}
+span.icon42 {background-position: -18px -36px;}
+span.icon43 {background-position: -36px -36px;}
+span.icon44 {background-position: -54px -36px;}
+span.icon45 {background-position: -72px -36px;}
+span.icon46 {background-position: -90px -36px;}
+span.icon47 {background-position: -108px -36px;}
+span.icon48 {background-position: -126px -36px;}
+span.icon49 {background-position: -144px -36px;}
+span.icon50 {background-position: -162px -36px;}
+span.icon51 {background-position: -180px -36px;}
+span.icon52 {background-position: -198px -36px;}
+span.icon53 {background-position: -216px -36px;}
+span.icon54 {background-position: -234px -36px;}
+span.icon55 {background-position: -252px -36px;}
+span.icon56 {background-position: -270px -36px;}
+span.icon57 {background-position: -288px -36px;}
+span.icon58 {background-position: -306px -36px;}
+span.icon59 {background-position: -324px -36px;}
+span.icon60 {background-position: -342px -36px;}
+
+/* Sprite Row 4 */
+span.icon61 {background-position: -0px -54px;}
+span.icon62 {background-position: -18px -54px;}
+span.icon63 {background-position: -36px -54px;}
+span.icon64 {background-position: -54px -54px;}
+span.icon65 {background-position: -72px -54px;}
+span.icon66 {background-position: -90px -54px;}
+span.icon67 {background-position: -108px -54px;}
+span.icon68 {background-position: -126px -54px;}
+span.icon69 {background-position: -144px -54px;}
+span.icon70 {background-position: -162px -54px;}
+span.icon71 {background-position: -180px -54px;}
+span.icon72 {background-position: -198px -54px;}
+span.icon73 {background-position: -216px -54px;}
+span.icon74 {background-position: -234px -54px;}
+span.icon75 {background-position: -252px -54px;}
+span.icon76 {background-position: -270px -54px;}
+span.icon77 {background-position: -288px -54px;}
+span.icon78 {background-position: -306px -54px;}
+span.icon79 {background-position: -324px -54px;}
+span.icon80 {background-position: -342px -54px;}
+
+/* Sprite Row 5 */
+span.icon81 {background-position: -0px -72px;}
+span.icon82 {background-position: -18px -72px;}
+span.icon83 {background-position: -36px -72px;}
+span.icon84 {background-position: -54px -72px;}
+span.icon85 {background-position: -72px -72px;}
+span.icon86 {background-position: -90px -72px;}
+span.icon87 {background-position: -108px -72px;}
+span.icon88 {background-position: -126px -72px;}
+span.icon89 {background-position: -144px -72px;}
+span.icon90 {background-position: -162px -72px;}
+span.icon91 {background-position: -180px -72px;}
+span.icon92 {background-position: -198px -72px;}
+span.icon93 {background-position: -216px -72px;}
+span.icon94 {background-position: -234px -72px;}
+span.icon95 {background-position: -252px -72px;}
+span.icon96 {background-position: -270px -72px;}
+span.icon97 {background-position: -288px -72px;}
+span.icon98 {background-position: -306px -72px;}
+span.icon99 {background-position: -324px -72px;}
+span.icon100 {background-position: -342px -72px;}
+
+/* Sprite Row 6 */
+span.icon101 {background-position: -0px -90px;}
+span.icon102 {background-position: -18px -90px;}
+span.icon103 {background-position: -36px -90px;}
+span.icon104 {background-position: -54px -90px;}
+span.icon105 {background-position: -72px -90px;}
+span.icon106 {background-position: -90px -90px;}
+span.icon107 {background-position: -108px -90px;}
+span.icon108 {background-position: -126px -90px;}
+span.icon109 {background-position: -144px -90px;}
+span.icon110 {background-position: -162px -90px;}
+span.icon111 {background-position: -180px -90px;}
+span.icon112 {background-position: -198px -90px;}
+span.icon113 {background-position: -216px -90px;}
+span.icon114 {background-position: -234px -90px;}
+span.icon115 {background-position: -252px -90px;}
+span.icon116 {background-position: -270px -90px;}
+span.icon117 {background-position: -288px -90px;}
+span.icon118 {background-position: -306px -90px;}
+span.icon119 {background-position: -324px -90px;}
+span.icon120 {background-position: -342px -90px;}
+
+/* Sprite Row 7 */
+span.icon121 {background-position: -0px -108px;}
+span.icon122 {background-position: -18px -108px;}
+span.icon123 {background-position: -36px -108px;}
+span.icon124 {background-position: -54px -108px;}
+span.icon125 {background-position: -72px -108px;}
+span.icon126 {background-position: -90px -108px;}
+span.icon127 {background-position: -108px -108px;}
+span.icon128 {background-position: -126px -108px;}
+span.icon129 {background-position: -144px -108px;}
+span.icon130 {background-position: -162px -108px;}
+span.icon131 {background-position: -180px -108px;}
+span.icon132 {background-position: -198px -108px;}
+span.icon133 {background-position: -216px -108px;}
+span.icon134 {background-position: -234px -108px;}
+span.icon135 {background-position: -252px -108px;}
+span.icon136 {background-position: -270px -108px;}
+span.icon137 {background-position: -288px -108px;}
+span.icon138 {background-position: -306px -108px;}
+span.icon139 {background-position: -324px -108px;}
+span.icon140 {background-position: -342px -108px;}
+
+/* Sprite Row 8 */
+span.icon141 {background-position: -0px -126px;}
+span.icon142 {background-position: -18px -126px;}
+span.icon143 {background-position: -36px -126px;}
+span.icon144 {background-position: -54px -126px;}
+span.icon145 {background-position: -72px -126px;}
+span.icon146 {background-position: -90px -126px;}
+span.icon147 {background-position: -108px -126px;}
+span.icon148 {background-position: -126px -126px;}
+span.icon149 {background-position: -144px -126px;}
+span.icon150 {background-position: -162px -126px;}
+span.icon151 {background-position: -180px -126px;}
+span.icon152 {background-position: -198px -126px;}
+span.icon153 {background-position: -216px -126px;}
+span.icon154 {background-position: -234px -126px;}
+span.icon155 {background-position: -252px -126px;}
+span.icon156 {background-position: -270px -126px;}
+span.icon157 {background-position: -288px -126px;}
+span.icon158 {background-position: -306px -126px;}
+span.icon159 {background-position: -324px -126px;}
+span.icon160 {background-position: -342px -126px;}
+
+/* Sprite Row 9 */
+span.icon161 {background-position: -0px -144px;}
+span.icon162 {background-position: -18px -144px;}
+span.icon163 {background-position: -36px -144px;}
+span.icon164 {background-position: -54px -144px;}
+span.icon165 {background-position: -72px -144px;}
+span.icon166 {background-position: -90px -144px;}
+span.icon167 {background-position: -108px -144px;}
+span.icon168 {background-position: -126px -144px;}
+span.icon169 {background-position: -144px -144px;}
+span.icon170 {background-position: -162px -144px;}
+span.icon171 {background-position: -180px -144px;}
+span.icon172 {background-position: -198px -144px;}
+span.icon173 {background-position: -216px -144px;}
+span.icon174 {background-position: -234px -144px;}
+span.icon175 {background-position: -252px -144px;}
+span.icon176 {background-position: -270px -144px;}
+span.icon177 {background-position: -288px -144px;}
+span.icon178 {background-position: -306px -144px;}
+span.icon179 {background-position: -324px -144px;}
+span.icon180 {background-position: -342px -144px;}
+
+/* Sprite Row 10 */
+span.icon181 {background-position: -0px -162px;}
+span.icon182 {background-position: -18px -162px;}
+span.icon183 {background-position: -36px -162px;}
+span.icon184 {background-position: -54px -162px;}
+span.icon185 {background-position: -72px -162px;}
+span.icon186 {background-position: -90px -162px;}
+span.icon187 {background-position: -108px -162px;}
+span.icon188 {background-position: -126px -162px;}
+span.icon189 {background-position: -144px -162px;}
+span.icon190 {background-position: -162px -162px;}
+span.icon191 {background-position: -180px -162px;}
+span.icon192 {background-position: -198px -162px;}
+span.icon193 {background-position: -216px -162px;}
+span.icon194 {background-position: -234px -162px;}
+span.icon195 {background-position: -252px -162px;}
+span.icon196 {background-position: -270px -162px;}
+span.icon197 {background-position: -288px -162px;}
+span.icon198 {background-position: -306px -162px;}
+span.icon199 {background-position: -324px -162px;}
+span.icon200 {background-position: -342px -162px;}
+
+
+
+/*------------------------------------*\
+	$DROPDOWN MENU
+\*------------------------------------*/
+div.dropdown {
+	float: left;
+	position: relative;
+}
+
+div.dropdown span.toggle {
+	width: 19px;
+	height: 16px;
+	
+	margin-left: 7px;
+	margin-top: 1px;
+	margin-right: 2px;
+	padding-left: 8px;
+	
+	float: right;
+	
+	background: url(../images/toggle.png) top right no-repeat;
+	border-left: 1px solid #D9D9D9;
+	
+	-webkit-transition: border-color .20s;
+	-moz-transition: border .20s;
+	-o-transition: border-color .20s;
+	transition: border-color .20s;
+}
+div.dropdown span.toggle.active {
+	background: url(../images/toggle.png) bottom right no-repeat;
+}
+div.dropdown 
+button:hover span.toggle, 
+.button:hover span.toggle {
+	border-color: #C0C0C0;
+}
+
+div.dropdown-slider {
+	display: none;
+	
+	overflow: hidden;
+	
+	margin: 0 7px 5px 7px;
+	position: absolute;
+	top: 34px;
+	right: 0;
+	
+	background: #F2F2F2;
+	
+	border-right: solid 1px #D9D9D9;
+	border-bottom: solid 1px #D9D9D9;
+	border-left: solid 1px #D9D9D9;
+	
+	-webkit-border-bottom-right-radius: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	-moz-border-radius-bottomright: 2px;
+	-moz-border-radius-bottomleft: 2px;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+	
+	-webkit-transition: border-color .20s;
+	-moz-transition: border .20s;
+	-o-transition: border-color .20s;
+	transition: border-color .20s;
+}
+.left div.dropdown-slider {
+	margin: 0 1px 5px 7px;
+}
+.middle div.dropdown-slider {
+	margin: 0 1px 5px 1px;
+}
+.right div.dropdown-slider {
+	margin: 0 7px 5px 1px;
+}
+div.dropdown-slider .ddm {
+	display: block;
+	background: #F2F2F2;
+	color: #585858;
+	
+	text-decoration: none;
+	text-shadow: 0 1px 0 #fff;
+	font: bold 11px Helvetica, Arial, sans-serif;
+	line-height: 18px;
+	height: 18px;
+	
+	margin: 0;
+	padding: 5px 6px 4px 6px;
+	width: 100%;
+	float: left;
+	
+	border-top: 1px solid #FFF;
+	border-bottom: 1px solid #D9D9D9;
+}
+div.dropdown-slider .ddm:hover {
+	background: #F4F4F4;
+	border-bottom-color: #C0C0C0;
+}
+div.dropdown-slider .ddm:active {
+	border-bottom-color: #4D90FE;
+	color: #4D90FE;
+	
+	-moz-box-shadow:inset 0 0 10px #D4D4D4;
+	-webkit-box-shadow:inset 0 0 10px #D4D4D4;
+	box-shadow:inset 0 0 10px #D4D4D4;
+}
+div.dropdown-slider .ddm:last-child {
+	border-bottom: none;
+}
+
+/* ==|== Google Buttons ======================================================
+   END of Google Buttons
+   ========================================================================== */
+
+
+/* ==|== media queries ======================================================
+   PLACEHOLDER Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+  /* Style adjustments for viewports 480px and over go here */
+
+}
+
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports 768px and over go here */
+
+}
+
+
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
+.ir br { display: none; }
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
