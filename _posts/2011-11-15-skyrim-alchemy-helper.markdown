@@ -51,8 +51,9 @@ and/or ingredient(s). There will also be way, once I do further testing,
 to determine the potency of the combination (since I believe having more
 copies of the same effect increases the potency).
 
-Go check it out and feel free to give me feedback. I'm always listening on
-Twitter and read all emails (even if I don't reply to them all)!
+[Play around with it][skyrim-alchemy-helper-web] and give me feedback. I'm
+always listening on Twitter and read all emails (even if I don't reply to 
+them all)!
 
 [skyrim-alchemy-helper-py]: https://github.com/magus/skyrim-alchemy-helper
 [skyrim-alchemy-helper-web]: http://fierce-fire-5307.herokuapp.com/
