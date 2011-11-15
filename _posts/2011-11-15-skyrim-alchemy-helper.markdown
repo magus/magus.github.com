@@ -59,4 +59,4 @@ always listening on Twitter and read all emails (even if I don't reply to
 them all)!
 
 [skyrim-alchemy-helper-py]: https://github.com/magus/skyrim-alchemy-helper
-[skyrim-alchemy-helper-web]: http://fierce-fire-5307.herokuapp.com/
+[skyrim-alchemy-helper-web]: http://skyrim.iamnoah.com/
