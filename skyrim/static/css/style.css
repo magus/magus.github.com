@@ -518,6 +518,14 @@ body{
     width: 250px;
 }
 
+#footer-post{
+	border-top: 1px dotted #C9C9C9;
+    bottom: 100px;
+    left: 200px;
+    position: fixed;
+    width: 250px;
+}
+
 #footerNav {
     width: 600px;
 }
