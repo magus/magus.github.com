@@ -276,6 +276,18 @@ body{
     z-index: 11;
 }
 
+#alchemyapp-post{
+	font-size: 13px;
+    height: 528px;
+    left: 75px;
+    line-height: 1.2;
+    margin-top: -230px;
+    opacity: 1;
+    position: fixed;
+    top: 50%;
+    width: 508px;
+    z-index: 5;
+}
 
 #alchemyapp .ingredient-wrapper{
 	height: 340px;
@@ -431,21 +443,17 @@ body{
 
 #recipe-results-nav{
 	height: 50px;
-    margin-left: 200px;
+    left: 600px;
     position: fixed;
-    right: -250px;
-    width: 50%;
     z-index: 15;
 }
 
 #recipe-results{
 	font-size: 13px;
-    height: 100%;
-    margin: 50px 0 0 200px;
-    overflow: auto;
+    height: 95%;
+    left: 600px;
+    margin: 35px 0 0;
     position: absolute;
-    right: -250px;
-    width: 50%;
 }
 
 .recipe{
@@ -482,19 +490,6 @@ body{
     width: 1px;
 	
 	background-image: url("../img/layout/stylesheet-no-repeat.png");
-}
-
-.alchemyapp-post{
-	font-size: 13px;
-    height: 528px;
-    left: 75px;
-    line-height: 1.2;
-    margin-top: -230px;
-    opacity: 1;
-    position: fixed;
-    top: 50%;
-    width: 508px;
-    z-index: 5;
 }
 
 .recipe-results-nav-post{
