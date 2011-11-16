@@ -242,40 +242,6 @@ body{
 	z-index: 5;
 }
 
-#alchemyapp .background-lighting{
-	background-position: 0 0;
-    background-repeat: no-repeat;
-	background-image: url("../img/layout/stylesheet-no-repeat.png");
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 2;
-}
-
-#alchemyapp .logo{
-	background-position: 0 -623px;
-    background-repeat: no-repeat;
-	background-image: url("../img/layout/stylesheet-no-repeat.png");
-	
-    height: 141px;
-    left: 146.5px;
-    position: absolute;
-    top: 71px;
-    width: 215px;
-    z-index: 10;
-}
-
-#alchemyapp .title{
-	font-family: 'Yanone Kaffeesatz',sans-serif;
-    font-size: 31px;
-    left: 148.5px;
-    position: absolute;
-    top: 225px;
-    z-index: 11;
-}
-
 #alchemyapp-post{
 	font-size: 13px;
     height: 528px;
@@ -289,7 +255,41 @@ body{
     z-index: 5;
 }
 
-#alchemyapp .ingredient-wrapper{
+#alchemyapp .background-lighting, #alchemyapp-post .background-lighting{
+	background-position: 0 0;
+    background-repeat: no-repeat;
+	background-image: url("../img/layout/stylesheet-no-repeat.png");
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+#alchemyapp .logo, #alchemyapp-post .logo{
+	background-position: 0 -623px;
+    background-repeat: no-repeat;
+	background-image: url("../img/layout/stylesheet-no-repeat.png");
+	
+    height: 141px;
+    left: 146.5px;
+    position: absolute;
+    top: 71px;
+    width: 215px;
+    z-index: 10;
+}
+
+#alchemyapp .title, #alchemyapp-post .title{
+	font-family: 'Yanone Kaffeesatz',sans-serif;
+    font-size: 31px;
+    left: 148.5px;
+    position: absolute;
+    top: 225px;
+    z-index: 11;
+}
+
+#alchemyapp .ingredient-wrapper, #alchemyapp-post .ingredient-wrapper{
 	height: 340px;
     left: 94px;
     top: 44px;
