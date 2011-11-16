@@ -484,6 +484,34 @@ body{
 	background-image: url("../img/layout/stylesheet-no-repeat.png");
 }
 
+.alchemyapp-post{
+	font-size: 13px;
+    height: 528px;
+    left: 75px;
+    line-height: 1.2;
+    margin-top: -230px;
+    opacity: 1;
+    position: fixed;
+    top: 50%;
+    width: 508px;
+    z-index: 5;
+}
+
+.recipe-results-nav-post{
+	height: 50px;
+    left: 600px;
+    position: fixed;
+    z-index: 15;
+}
+
+.recipe-results-post{
+	font-size: 13px;
+    height: 95%;
+    left: 600px;
+    margin: 35px 0 0;
+    position: absolute;
+}
+
 
 
 #footer{
