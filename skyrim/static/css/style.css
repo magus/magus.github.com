@@ -277,7 +277,7 @@ body{
     position: absolute;
     top: 71px;
     width: 215px;
-    z-index: 10;
+    z-index: 100;
 }
 
 #alchemyapp .title, #alchemyapp-post .title{
@@ -286,7 +286,7 @@ body{
     left: 148.5px;
     position: absolute;
     top: 225px;
-    z-index: 11;
+    z-index: 100;
 }
 
 #alchemyapp .ingredient-wrapper, #alchemyapp-post .ingredient-wrapper{
@@ -294,7 +294,7 @@ body{
     left: 94px;
     top: 44px;
     width: 326px;
-    z-index: 5;
+    z-index: 99;
 	
 	position: absolute;
 	
@@ -443,7 +443,7 @@ body{
 
 #recipe-results-nav{
 	height: 50px;
-    left: 600px;
+    left: 650px;
     position: fixed;
     z-index: 15;
 }
@@ -451,7 +451,7 @@ body{
 #recipe-results{
 	font-size: 13px;
     height: 95%;
-    left: 600px;
+    left: 650px;
     margin: 35px 0 0;
     position: absolute;
 }
@@ -494,7 +494,7 @@ body{
 
 .recipe-results-nav-post{
 	height: 50px;
-    left: 600px;
+    left: 650px;
     position: fixed;
     z-index: 15;
 }
@@ -502,7 +502,7 @@ body{
 .recipe-results-post{
 	font-size: 13px;
     height: 95%;
-    left: 600px;
+    left: 650px;
     margin: 35px 0 0;
     position: absolute;
 }
@@ -524,6 +524,7 @@ body{
     left: 200px;
     position: fixed;
     width: 250px;
+    z-index: 49;
 }
 
 #footerNav {
@@ -542,9 +543,12 @@ body{
 }
 
 #social {
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
     position: fixed;
-	left: 0;
-	bottom: 0;
+    width: 650px;
+    z-index: 50;
 }
 
 #social li {
