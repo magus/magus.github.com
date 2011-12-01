@@ -7,7 +7,8 @@
                       empty_message: 'No one\'s mentioned this page on Twitter yet. '+
                                        '<a href="http://twitter.com?status='+(options.empty_message || location.href)+'">'
                                        +'You could be the first</a>.',
-                      limit: 50
+                      limit: 50,
+					  onRender:function(){}
                    }
     var settings = $.extend(defaults, options)
 
@@ -40,6 +41,19 @@
         output.append(defaults.empty_message)
       }
     }
+	
+	var handle_trackbacks = function(data){
+	
+		parse_request(data);
+		
+		//use tipsy for tooltip hover
+		$('.boastful img').tipsy({
+			html:true,
+			title:function(){ return $(this).parent().parent().children('.boastful_tweet').html(); },
+			gravity:'s',
+			fade:true
+		});
+	}
     
     $.ajax({
       url:'http://otter.topsy.com/trackbacks.js',
@@ -48,7 +62,7 @@
           url: defaults.location,
           perpage: defaults.limit
         },
-      success:parse_request,
+      success:handle_trackbacks,
       dataType:'jsonp'}
     );
     
