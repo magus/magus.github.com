@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Skyrim: Alchemy Helper"
+boastful: "http://skyrim.iamnoah.com"
 ---
 
 The Elder Scrolls V: Skyrim has consumed all of my free time since it was

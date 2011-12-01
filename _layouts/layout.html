@@ -22,7 +22,13 @@
   <script type="text/javascript" src="/javascript/jquery.boastful.js"></script> 
   <script type="text/javascript"> 
    $(document).ready(function() {
-      $('#boastful').boastful()
+      $('#boastful').boastful( 
+		{% if page.boastful %}
+		{
+			location: "{{page.boastful}}"
+		}
+		{% endif %}
+	  );
       
    });
    </script>
