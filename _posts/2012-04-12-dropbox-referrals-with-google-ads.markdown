@@ -15,14 +15,14 @@ This was the only ad I created. The destination URL is the short URL dropbox pro
 ## Results and Analysis
 For the past few hours I've seen small Dropbox notifications on regular 5 or so minute intervals informing that my space has increased by another 512 MB. When I woke up this morning I had 31 emails from Dropbox informing me that referrals had installed Dropbox after getting my invite.
 
-<img src="/images/posts/2012-04-12-dropbox-referrals-with-google-ads/dropbox-referral-status.png" alt="Dropbox Referral Status" class="noclip" />
+<img src="/images/posts/2012-04-12-dropbox-referrals-with-google/dropbox-referral-status.png" alt="Dropbox Referral Status" class="noclip" />
 
 For a total of $57.21 from my existing credit, I obtained 16 GB of extra dropbox space. Since it didn't cost me anything, I'm pleased with the result however, if we look at the numbers, roughly 60 dollars to get 16 GB of permanent Dropbox space, is not that expensive considering it costs 10 dollars a month to get an extra 48 GB. I had obtained the maximum referral size bonus (16 GB) for a free account, overnight in roughly 18 hours.
 
-<img src="/images/posts/2012-04-12-dropbox-referrals-with-google-ads/dropbox-referral-bonus-16gb.png" alt="Dropbox Referral Bonus 16GB of 16GB" class="noclip" />
+<img src="/images/posts/2012-04-12-dropbox-referrals-with-google/dropbox-referral-bonus-16gb.png" alt="Dropbox Referral Bonus 16GB of 16GB" class="noclip" />
 
 In total the AdWords campaign accumulated 43,000 impressions and 559 total clicks amounting to a clickthrough rate (CTR) of about 1.3%. This number is dragged down significantly by what google calls it's 'Display Network' which is apparently any Google service which presents ads. If we look only at the ads resulting from keyword searches, we see CTRs as high as 17% for the term 'online backup' and 13% for 'dropbox'. The average cost for a click (CPC) for the term 'dropbox' was about 10 cents. The majority of the clicks came from the 'dropbox' keyword surprisingly. This tells me something I did not know about how a lot of people apparently use Google search. Users are searching for the term 'dropbox', and instead of going through the first result which is a link to the actual Dropbox website, opt to click my ad and sign up.
 
-<img src="/images/posts/2012-04-12-dropbox-referrals-with-google-ads/click-join-install-ratio.png" alt="Clickthrough vs Joined vs Installed" class="noclip" />
+<img src="/images/posts/2012-04-12-dropbox-referrals-with-google/click-join-install-ratio.png" alt="Clickthrough vs Joined vs Installed" class="noclip" />
 
 As you can see from the graph above of the clickthrough vs joined vs installed ratios, the conversion rate for a click is fairly low, at 16% joining the service. However once they've joined we have a 60% chance that they will install the software and give me the bonus space from the referral, not bad. I'm also assuming that some users will install the software at some point in the future as Dropbox has internal methods of encouraging the user to install the software.
