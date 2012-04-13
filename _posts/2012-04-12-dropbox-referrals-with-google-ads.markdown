@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Dropbox Referrals with Google AdWords"
+boastful: "http://iamnoah.com/posts/dropbox-referrals-with-google-ads/"
 ---
 
 How many times has a service asked you to refer a friend? How many of those times did you manage to convince more than a few friends to sign up? All too often web applications ask users to share a referral URL with their friends in order to increase the exposure of their application. Unfortunately for me, I don't necessarily always have 32 friends who I can convince and happen to not have already heard about the product I'm referring them.
