@@ -8,7 +8,7 @@ How many times has a service asked you to refer a friend? How many of those time
 ## Enter Google AdWords
 What better way to spread my referral URL than through a Google Adwords campaign? Using some free credit I had from a promotional code I was able to create a campaign without using money from my own pocket.
 
-<img src="/images/posts/2012-04-12-dropbox-referrals-with-google-adwords/dropbox-referral-adword-campaign.png" alt="Dropbox Referral Google Text" class="noclip" />
+<img src="/images/posts/2012-04-12-dropbox-referrals-with-google-adwords/dropbox-referral-adwords-campaign.png" alt="Dropbox Referral Google AdWords Text" class="noclip" />
 
 This was the only ad I created. The destination URL is the short URL dropbox provides each user for referring new users. The ad displays for keyword searches with terms such as 'online storage', 'free online backup', etc. You have to be creative here because a lot of the terms are highly competitive and require large bids to present on the first page. If a user clicks the ad, they are directed to the dropbox sign up page and from there Dropbox handles the rest. In order for me to obtain the credit, they not only have to sign up for Dropbox but install the software. Pretty simple.
 
