@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RTW: Madrid
+title: "RTW: Madrid"
 ---
 
 # Round the World (RTW) Trip
