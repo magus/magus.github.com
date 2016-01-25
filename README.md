@@ -1,7 +1,17 @@
 # magus.github.com
+Powered by [Jekyll](http://github.com/mojombo/jekyll) and hosted on [GitHub Pages](http://pages.github.com/).
 
-Hi. This is a [Jekyll](http://github.com/mojombo/jekyll)-powered blog hosted on [GitHub Pages](http://pages.github.com/) for [github.iamnoah.com](http://github.iamnoah.com). Feel free to browse the source, fork, [ask me questions](http://twitter.com/imnmj), and post your own compelling blog posts. Because sharing is caring. We're developers, after all.
+[Twitter - @imnmj](http://twitter.com/imnmj)
 
-Forked from [holman's](http://github.com/holman) blog with love and care.
+[Facebook - @noahhh](http://facebook.com/noahhh)
 
-\- Noah
+[iamnoah.com](http://iamnoah.com)
+
+## setup
+- `git clone https://github.com/magus/magus.github.com.git`
+- `cd magus.github.com`
+- `curl -sSL https://get.rvm.io | bash -s stable --ruby`
+- `gem install bundler`
+- `bundle install`
+- Run the server with `bundle exec jekyll serve`
+- Open `http://localhost:4000/` in your browser
