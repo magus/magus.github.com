@@ -1,8 +1,14 @@
-markdown: rdiscount
-pygments: true
-lsi: false #set to true to use site.related_posts
-permalink: /posts/:year/:i_month/:i_day/:title
-auto: true
-server: true
-rdiscount:
-  extensions: [smart]
+# Conversion
+markdown:    kramdown
+highlighter: rouge
+lsi:         false        # set to true to use site.related_posts
+incremental: false
+excerpt_separator: "\n\n"
+
+# Outputting
+permalink:     /posts/:year/:i_month/:i_day/:title
+
+# Markdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge

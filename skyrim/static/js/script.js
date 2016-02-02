@@ -1,4 +1,4 @@
-// Author: Noah M. Jorgenson
+// Author: Noah M. Jorgensen
 
 $(function(){
 	$('.ingredient-box .display-all').click(function(){
@@ -6,11 +6,11 @@ $(function(){
 		var $checkbox = $(this).find('input:checkbox');
        $checkbox.attr('checked', !$checkbox.attr('checked'));
 	});
-	
+
 	$('.ingredient-box .search-button').click(function(){
 		$('#ingredient-form').submit();
 	});
-	
+
 	$('.recipe-results-nav-button').click(function(){
 		var id = $(this).attr('target');
 		//hide all results
@@ -18,11 +18,5 @@ $(function(){
 		//display the targetted effect count recipe results
 		$("#"+id).fadeIn();
 	});
-	
+
 });
-
-
-
-
-
-

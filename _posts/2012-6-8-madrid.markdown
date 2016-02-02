@@ -5,9 +5,8 @@ tags: [RTW, Madrid]
 ---
 
 # Round the World (RTW) Trip
-The Round the World trip blog entries are a collection of
-<a href='http://github.com/magus/shell-scripts/blob/master/create-blog-markdown.zsh'
-target='_blank'>automatically generated</a>
+The Round the World trip blog entries are a collection of <a href='http://github.com/magus/shell-scripts/blob/master/create-blog-markdown.zsh'
+target='_blank'>automagically generated</a>
 blog entries based on my trip around the world. During my travels I periodically
 update simple text files for each location, with my experiences, thoughts and the
 people that I meet. The content is very stream of thought; entries are written in
