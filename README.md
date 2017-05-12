@@ -1,7 +1,7 @@
 # magus.github.com
 Powered by [Jekyll](http://github.com/mojombo/jekyll) and hosted on [GitHub Pages](http://pages.github.com/).
 
-[Twitter - @imnmj](http://twitter.com/imnmj)
+[Twitter - @magusnn](http://twitter.com/magusnn)
 
 [Facebook - @noahhh](http://facebook.com/noahhh)
 
